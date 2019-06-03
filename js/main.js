@@ -16,7 +16,7 @@ $(document).ready(function() {
         if ($(window).scrollTop() >= $('.personal-profile').offset().top) {
             $('.nav').addClass('fixed');
             $('.menu-s').addClass('fixed').css('top', '56px');
-            $('.profile').addClass('here');
+
             $('.resume').removeClass('here');
             $('.slider').css('margin-right', '0');
             $('.intro').fadeIn(2000);
@@ -32,40 +32,33 @@ $(document).ready(function() {
     $(window).scroll(function() {
 
         if ($(window).scrollTop() >= $('.resume-wrap').offset().top) {
-            $('.resume-article').slideDown(1500);
+            $('.resume-article').slideDown(2000);
+            $('.resume-article1').slideDown(2000);
             $('.sub-title').delay(1500).css('margin-left', '0');
+            $('.sub-title1').delay(1500).css('margin-right', '0');
             $('.resume').addClass('here');
             $('.profile').removeClass('here');
             $('.skill').removeClass('here');
-            $('.portfolio').removeClass('here');
+
         }
     });
 
     $(window).scroll(function() {
 
         if ($(window).scrollTop() >= $('.skill-wrap').offset().top) {
-            $('#bar-1').delay(1000).css('height', '260px');
-            $('#bar-2').delay(1000).css('height', '400px');
-            $('#bar-3').delay(1000).css('height', '350px');
-            $('#bar-4').delay(1000).css('height', '310px');
-            $('#bar-5').delay(1000).css('height', '330px');
-            $('#bar-6').delay(1000).css('height', '180px');
+            $('#bar-1').delay(1000).css('height', '280px');
+            $('#bar-2').delay(1000).css('height', '300px');
+            $('#bar-3').delay(1000).css('height', '320px');
+            $('#bar-4').delay(1000).css('height', '410px');
+            $('#bar-5').delay(1000).css('height', '300px');
+            $('#bar-6').delay(1000).css('height', '320px');
             $('.skill').addClass('here');
             $('.resume').removeClass('here');
             $('.contact').removeClass('here');
-            $('.portfolio').removeClass('here');
+
         }
     });
 
-    $(window).scroll(function() {
-
-        if ($(window).scrollTop() >= $('.portfolio-wrap').offset().top - 10) {
-            $('.portfolio-list').fadeIn(30000);
-            $('.portfolio').addClass('here');
-            $('.profile').removeClass('here');
-            $('.skill').removeClass('here');
-        }
-    });
 
     $(window).scroll(function() {
 
@@ -74,7 +67,7 @@ $(document).ready(function() {
             $('.contact-form').css('margin-right', '0');
             $('.contact').addClass('here');
             $('.skill').removeClass('here');
-            $('.portfolio').removeClass('here');
+
         }
     });
 
@@ -86,7 +79,7 @@ $(document).ready(function() {
         fade: true,
         infinite: true,
         autoplay: true,
-        speed: 2000,
+        speed: 1500,
     });
 
     // 手機版menu
