@@ -1,12 +1,12 @@
 $(document).ready(function() {
 
-    //錨點
+    //頁面滑動
 
     $('.container').on('click', '.anchor', function(event) {
         event.preventDefault();
         $('html, body').animate({
             scrollTop: $($.attr(this, 'href')).offset().top
-        }, 800);
+        }, 900);
     });
 
     //判斷高度
@@ -32,8 +32,8 @@ $(document).ready(function() {
     $(window).scroll(function() {
 
         if ($(window).scrollTop() >= $('.resume-wrap').offset().top) {
-            $('.resume-article').slideDown(2000);
-            $('.resume-article1').slideDown(2000);
+            $('.resume-article').slideDown(1500);
+            $('.resume-article1').slideDown(1500);
             $('.sub-title').delay(1500).css('margin-left', '0');
             $('.sub-title1').delay(1500).css('margin-right', '0');
             $('.resume').addClass('here');
@@ -46,12 +46,12 @@ $(document).ready(function() {
     $(window).scroll(function() {
 
         if ($(window).scrollTop() >= $('.skill-wrap').offset().top) {
-            $('#bar-1').delay(1000).css('height', '280px');
-            $('#bar-2').delay(1000).css('height', '300px');
-            $('#bar-3').delay(1000).css('height', '320px');
-            $('#bar-4').delay(1000).css('height', '410px');
-            $('#bar-5').delay(1000).css('height', '300px');
-            $('#bar-6').delay(1000).css('height', '320px');
+            $('#bar-1').delay(850).css('height', '280px');
+            $('#bar-2').delay(850).css('height', '300px');
+            $('#bar-3').delay(850).css('height', '320px');
+            $('#bar-4').delay(850).css('height', '410px');
+            $('#bar-5').delay(850).css('height', '300px');
+            $('#bar-6').delay(850).css('height', '320px');
             $('.skill').addClass('here');
             $('.resume').removeClass('here');
             $('.contact').removeClass('here');
@@ -101,6 +101,6 @@ $(document).ready(function() {
             i = i - 1;
         }
     }
-    setInterval(blinker, 4000);
+    setInterval(blinker, 3000);
 
 });
