@@ -101,6 +101,6 @@ $(document).ready(function() {
             i = i - 1;
         }
     }
-    setInterval(blinker, 3000);
+    setInterval(blinker, 1600);
 
 });
