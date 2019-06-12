@@ -504,6 +504,16 @@ h2.dope {
     background: -o-linear-gradient(right, #C9D6FF, #E2E2E2);
 }
 
+.spacer3 {
+    width: 195px;
+    height: 2px;
+    margin: 20px auto;
+    background: -webkit-linear-gradient(right, #E0EAFC, #CFDEF3);
+    background: -moz-linear-gradient(right, #E0EAFC, #CFDEF3);
+    background: -ms-linear-gradient(right, #E0EAFC, #CFDEF3);
+    background: -o-linear-gradient(right, #E0EAFC, #CFDEF3);
+}
+
 .slider-wrap {
     padding: 0 120px 0 120px;
     box-sizing: border-box;
@@ -912,16 +922,18 @@ p.firstp {
     box-sizing: border-box;
     margin-right: -100%;
     transition: all 1s;
+    position: relative;
+    top: 93px;
 }
 
 .contact-content .contact-form input[type="text"] {
     width: 100%;
-    height: 34px;
+    height: 43px;
     box-sizing: border-box;
     margin-bottom: 15px;
     padding: 0 10px;
     cursor: auto;
-    color: #444444;
+    color: #1d1c1c;
     border-radius: 4px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
